@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>UNiTesla Mapa do site</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <header class="navbar scrolling-navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand h4 my-auto" href="#">UNiTesla</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Início <span class="sr-only">(current)</span></a
+              >
+            </li> -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-item nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Instituição
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Identidade</h6>
+              <a class="dropdown-item" href="#">Princípios</a>
+              <a class="dropdown-item" href="#">Méritos</a>
+              <a class="dropdown-item" href="#">Notícias</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Funcionamento</h6>
+              <a class="dropdown-item" href="#">Currículo</a>
+              <a class="dropdown-item" href="#">Corpo Docente</a>
+              <a class="dropdown-item" href="#">Intercâmbios</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Cursos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Cursos Presenciais</h6>
+              <a class="dropdown-item" href="#">Graduação</a>
+              <a class="dropdown-item" href="#">Pós-graduação e MBA</a>
+              <a class="dropdown-item" href="#">Mestrado</a>
+              <a class="dropdown-item" href="#">Doutorado</a>
+              <a class="dropdown-item" href="#">Demais grais</a>
+              <a class="dropdown-item" href="#">Cursos Livres</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Cursos EAD</h6>
+              <a class="dropdown-item" href="#">Graduação</a>
+              <a class="dropdown-item" href="#">Demais grais</a>
+              <a class="dropdown-item" href="#">Cursos Livres</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Unidades
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">SP Capital</h6>
+              <a class="dropdown-item" href="#">Paulista</a>
+              <a class="dropdown-item" href="#">Lapa</a>
+              <a class="dropdown-item" href="#">Vila Mariana</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">SP Estado</h6>
+              <a class="dropdown-item" href="#">Campinas</a>
+              <a class="dropdown-item" href="#">Sorocaba</a>
+              <!-- <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header">Estrutura</h6>
+                <a class="dropdown-item" href="#">Visitas</a>
+                <a class="dropdown-item" href="#">Tour virtual</a>
+                <a class="dropdown-item" href="#">Organização de eventos</a>
+                <a class="dropdown-item" href="#">Locação de espaços</a> -->
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-item nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Ingressante
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Ingresso por mérito</h6>
+              <a class="dropdown-item" href="#">Vestibular</a>
+              <a class="dropdown-item" href="#">Nota ENEM e FUVEST</a>
+              <a class="dropdown-item" href="#">Histórico Escolar</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Outras formas de ingresso</h6>
+              <a class="dropdown-item" href="#">Transferência</a>
+              <a class="dropdown-item" href="#">Retorno</a>
+              <a class="dropdown-item" href="#">Nova Graduação</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Soluções Financeiras</h6>
+              <a class="dropdown-item" href="#">Bolsas</a>
+              <a class="dropdown-item" href="#">Financiamentos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-item nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Atendimento
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Convencional</h6>
+              <a class="dropdown-item" href="#">Chat Online</a>
+              <a class="dropdown-item" href="#">E-mails</a>
+              <a class="dropdown-item" href="#">Telefones</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">Mídias Sociais</h6>
+              <a class="dropdown-item" href="#">Twitter</a>
+              <a class="dropdown-item" href="#">YouTube</a>
+              <a class="dropdown-item" href="#">Instagram</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#">Todas nossas mídias sociais</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Nossas Bibliotecas <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Portal acadêmico <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Mapa do site <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline ml-2 my-2 my-lg-0">
+          <input
+            class="form-control mr-lg-2"
+            type="search"
+            placeholder="Ajuda, Cursos, etc..."
+            aria-label="Ajuda, Cursos, etc..."
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <div class="container mt-3">
+      <h1 class="text-primary">Mapa do site</h1>
+      <ul>
+        <div class="row mt-3">
+          <p class="col-sm-3 h3">Instituição</p>
+          <p class="col-sm-9 mt-1 h4">
+            Concentra informações sobre a Universidade Nikola Tesla.
+          </p>
+        </div>
+        <div class="row mt-3">
+          <p class="col-sm-3 h4">Identidade</p>
+          <p class="col-sm-9 mt-1 h5">O que somos.</p>
+        </div>
+        <dl class="row mt-3">
+          <dt class="col-sm-3">Princípios</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >História da Universidade e de seus fundadores.</a
+              >
+            </p>
+            <p>
+              <a class="text-dark" href="#"
+                >Valores da Instituição e visão para o futuro.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Méritos</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Todas as conquistas da nossa história.</a
+              >
+            </p>
+            <p>
+              <a class="text-dark" href="#">
+                Classificações, Premiações, Histórico de notas de nossos cursos.
+              </a>
+            </p>
+            <p>
+              <a class="text-dark" href="#">Alunos e Professores Ilustres.</a>
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Notícias</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">
+                Todas as notícias sobre a Universidade incluindo eventos
+                institucionais, estudantis, acadêmicos, etc.
+              </a>
+            </p>
+          </dd>
+        </dl>
+        <div class="row mt-3">
+          <p class="col-sm-3 h4">Funcionamento</p>
+          <p class="col-sm-9 mt-1 h5">Como funcionamos.</p>
+        </div>
+        <dl class="row mt-3 border-bottom">
+          <dt class="col-sm-3">Currículo</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Como são elaborados nossos currículos, focos e objetivos.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Corpo Docente</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Lista do nosso corpo docente, informações e contato.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Intercâmbios</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Todas as informações sobre nossos programas de intercâmbios.</a
+              >
+            </p>
+          </dd>
+        </dl>
+      </ul>
+      <ul>
+        <div class="row mt-3">
+          <p class="col-sm-3 h3">Cursos</p>
+          <p class="col-sm-9 mt-1 h4">
+            Listas de todos os cursos oferecidos pela Universidade.
+          </p>
+        </div>
+        <div class="row mt-3">
+          <p class="col-sm-3 h4">Cursos Presenciais</p>
+          <p class="col-sm-9 mt-1 h5">
+            Cursos disponíveis presencialmente em nossos campi.
+          </p>
+        </div>
+        <dl class="row mt-3">
+          <dt class="col-sm-3">Graduação</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">Todos os cursos de graduação.</a>
+            </p>
+            <p>
+              <a class="text-dark" href="#"
+                >Disponibilidade, em horário e campus.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Pós-graduação</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Todos os cursos de pós-graduação e MBA.</a
+              >
+            </p>
+            <p>
+              <a class="text-dark" href="#"
+                >Disponibilidade, em horário e campus.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Mestrado</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">Todos os cursos de mestrado.</a>
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Doutorado</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">Todos os cursos de doutorado.</a>
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Demais grais</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#"
+                >Demais cursos de alto grau, como pós-mestrados e
+                pós-doutorados.</a
+              >
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Cursos Livres</dt>
+          <dd class="col-sm-9">
+            <p><a class="text-dark" href="#">Todos os cursos livres.</a></p>
+            <p>
+              <a class="text-dark" href="#"
+                >Disponibilidade, em horário e campus.</a
+              >
+            </p>
+          </dd>
+        </dl>
+          <div class="row mt-3">
+            <p class="col-sm-3 h4">Cursos EAD</p>
+            <p class="col-sm-9 mt-1 h5">
+              Cursos disponíveis de Eduacação a Distância.
+            </p>
+          </div>
+          <dl class="row mt-3 border-bottom">
+            <dt class="col-sm-3">Graduação</dt>
+            <dd class="col-sm-9">
+              <p>
+                <a class="text-dark" href="#">Todos os cursos de graduação.</a>
+              </p>
+            </dd>
+            <dt class="col-sm-3">Demais grais</dt>
+            <dd class="col-sm-9">
+              <p>
+                <a class="text-dark" href="#"
+                  >Demais cursos de alto grau, como pós-mestrados e
+                  pós-doutorados.</a
+                >
+              </p>
+            </dd>
+            <dt class="col-sm-3">Cursos Livres</dt>
+            <dd class="col-sm-9">
+              <p><a class="text-dark" href="#">Todos os cursos livres.</a></p>
+            </dd>
+          </dl>      
+        </dl>
+      </ul>
+      <ul>
+        <div class="row mt-3">
+          <p class="col-sm-3 h3">Unidades</p>
+          <p class="col-sm-9 mt-1 h4">Lista de todos nossos Campi.</p>
+        </div>
+        <dl class="row mt-3 border-bottom">
+          <dt class="col-sm-3">Campi na cidade de São Paulo</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">Paulista</a>
+            </p>
+            <p>
+              <a class="text-dark" href="#">Lapa</a>
+            </p>
+            <p>
+              <a class="text-dark" href="#">Vila Mariana</a>
+            </p>
+          </dd>
+
+          <dt class="col-sm-3">Campi em outras cidades de SP</dt>
+          <dd class="col-sm-9">
+            <p>
+              <a class="text-dark" href="#">Campinas</a>
+            </p>
+            <p>
+              <a class="text-dark" href="#">Sorocaba</a>
+            </p>
+          </dd>
+        </dl>
+      </ul>
+    </div>
+  </body>
+</html>
